@@ -4,8 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       PR_number:
-        description: 'Push request number'
+        description: 'Pull request number'
         required: true
+      TEST:
+        description: "Testing description"
+        required: false
 
 jobs:
   create:
